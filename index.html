@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- normalize file -->
+    <link rel="stylesheet" href="css/normalize.css" />
+
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <!-- main css file -->
+    <link rel="stylesheet" href="./css/index.css" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | News homepage</title>
+  </head>
+  <body>
+    <!-- ----------------------------------------- -->
+
+    <div
+      class="offcanvas offcanvas-end"
+      data-bs-backdrop="static"
+      tabindex="-1"
+      id="staticBackdrop"
+      aria-labelledby="staticBackdropLabel"
+    >
+      <div class="offcanvas-header">
+        <div
+          class="close-btn ms-auto"
+          type="button"
+          data-bs-dismiss="offcanvas"
+          aria-label="Close"
+        >
+          <img src="assets/images/icon-menu-close.svg" alt="close" />
+        </div>
+      </div>
+      <div class="offcanvas-body">
+        <ul class="list-unstyled mx-3">
+          <li class="nav-item mt-5">
+            <a href="#" class="link-underline link-underline-opacity-0">Home</a>
+          </li>
+          <li class="nav-item mt-5">
+            <a href="#" class="link-underline link-underline-opacity-0">New</a>
+          </li>
+          <li class="nav-item mt-5">
+            <a href="#" class="link-underline link-underline-opacity-0"
+              >Popular</a
+            >
+          </li>
+          <li class="nav-item mt-5">
+            <a href="#" class="link-underline link-underline-opacity-0"
+              >Trending</a
+            >
+          </li>
+          <li class="nav-item mt-5">
+            <a href="#" class="link-underline link-underline-opacity-0"
+              >Categories</a
+            >
+          </li>
+        </ul>
+      </div>
+    </div>
+    <!-- start header -->
+    <header class="py-5">
+      <div class="container">
+        <nav class="navbar ">
+          <img src="./assets/images/logo.svg" alt="logo" />
+          <div
+            class="bars-btn d-md-none d-block"
+            type="button"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#staticBackdrop"
+            aria-controls="staticBackdrop"
+          >
+            <img src="assets/images/icon-menu.svg" alt="menu" />
+          </div>
+          <ul class="navbar-nav d-md-flex flex-row align-items-center d-none">
+            <li class="nav-item me-4">
+              <a href="#" class="link-underline link-underline-opacity-0"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item me-4">
+              <a href="#" class="link-underline link-underline-opacity-0"
+                >New</a
+              >
+            </li>
+            <li class="nav-item me-4">
+              <a href="#" class="link-underline link-underline-opacity-0"
+                >Popular</a
+              >
+            </li>
+            <li class="nav-item me-4">
+              <a href="#" class="link-underline link-underline-opacity-0"
+                >Trending</a
+              >
+            </li>
+            <li class="nav-item">
+              <a href="#" class="link-underline link-underline-opacity-0"
+                >Categories</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <!-- end header -->
+    <!-- start Future -->
+    <div class="future ">
+      <div class="container">
+        <div class="futrue-content row">
+          <div class="web col-12 col-lg-8 mt-4">
+            <div class="image">
+              <img
+                src="./assets/images/image-web-3-desktop.jpg"
+                alt="web"
+                class="img-fluid d-none d-md-block"
+              />
+              <img
+                src="./assets/images/image-web-3-mobile.jpg"
+                alt="web"
+                class="img-fluid d-block d-md-none"
+              />
+            </div>
+            <div class="row info mt-4">
+              <div class="col-12 col-md-6">
+                <h1>The Bright Future of Web 3.0?</h1>
+              </div>
+              <div class="col-12 col-md-6">
+                <p class="lh-lg">
+                  We dive into the next evolution of the web that claims to put
+                  the power of the platforms back into the hands of the people.
+                  But is it really fulfilling its promise?
+                </p>
+                <button class="btn lh-lg rounded-0 px-5 mt-3">Read more</button>
+              </div>
+            </div>
+          </div>
+          <!-- d-flex flex-column justify-content-center -->
+          <div class="col-12 col-lg-4 new py-3 px-4 mt-4">
+            <h1>New</h1>
+            <div class="text mt-3">
+              <a href="#" class="fs-4 link-underline link-underline-opacity-0"
+                >Hydrogen VS Electric Cars</a
+              >
+              <p class="mt-3">
+                Will hydrogen-fueled cars ever catch up to EVs?
+              </p>
+            </div>
+            <!-- ---- -->
+            <div class="text mt-3">
+              <a href="#" class="fs-4 link-underline link-underline-opacity-0"
+                >The Downsides of AI Artistry</a
+              >
+              <p class="mt-3">
+                What are the possible adverse effects of on-demand AI image
+                generation?
+              </p>
+            </div>
+            <!-- ---- -->
+            <div class="text mt-3">
+              <a href="#" class="fs-4 link-underline link-underline-opacity-0"
+                >Is VC Funding Drying Up?</a
+              >
+              <p class="mt-3">
+                Private funding by VC firms is down 50% YOY. We take a look at
+                what that means.
+              </p>
+            </div>
+            <!-- ---- -->
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- end Future -->
+    <!-- start cate -->
+    <div class="cate mt-5">
+      <div class="container">
+        <div class="cate-content row">
+          <div class="col-12 col-md-4 row align-items-center mt-4">
+            <div class="image col-5">
+              <img
+                src="./assets/images/image-retro-pcs.jpg"
+                alt="Retro"
+                class="img-fluid"
+              />
+            </div>
+            <div class="info col-7">
+              <h3>01</h3>
+              <a href="#" class="fs-6 link-underline link-underline-opacity-0">
+                Reviving Retro PCs</a
+              >
+              <p class="mt-3 lh-lg">
+                What happens when old PCs are given modern upgrades?
+              </p>
+            </div>
+          </div>
+          <!-- -- -->
+          <div class="col-12 col-md-4 row align-items-center mt-4">
+            <div class="image col-5">
+              <img
+                src="./assets/images/image-top-laptops.jpg"
+                alt="Retro"
+                class="img-fluid"
+              />
+            </div>
+            <div class="info col-7">
+              <h3>02</h3>
+              <a href="#" class="fs-6 link-underline link-underline-opacity-0">
+                Top 10 Laptops of 2022</a
+              >
+              <p class="mt-3 lh-lg">
+                Our best picks for various needs and budgets.
+              </p>
+            </div>
+          </div>
+          <!-- -- -->
+          <div class="col-12 col-md-4 row align-items-center mt-4">
+            <div class="image col-5">
+              <img
+                src="./assets/images/image-gaming-growth.jpg"
+                alt="Retro"
+                class="img-fluid"
+              />
+            </div>
+            <div class="info col-7">
+              <h3>03</h3>
+              <a href="#" class="fs-6 link-underline link-underline-opacity-0">
+                The Growth of Gaming</a
+              >
+              <p class="mt-3 lh-lg">
+                How the pandemic has sparked fresh opportunities.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- end cate -->
+
+    <!-- ------------------------------------------ -->
+    <script src="js/index.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
+
+<!-- 
+
+  
+  Home
+  New
+  Popular
+  Trending
+  Categories
+  The Bright Future of Web 3.0?
+  
+  We dive into the next evolution of the web that claims to put the power of the platforms back into the hands of the people. 
+  But is it really fulfilling its promise?
+  
+  Read more
+  
+  New 
+  
+  Hydrogen VS Electric Cars
+  Will hydrogen-fueled cars ever catch up to EVs?
+  
+  The Downsides of AI Artistry
+  What are the possible adverse effects of on-demand AI image generation?
+  
+  Is VC Funding Drying Up?
+  Private funding by VC firms is down 50% YOY. We take a look at what that means.
+  
+  01
+  Reviving Retro PCs
+  What happens when old PCs are given modern upgrades?
+  
+  02
+  Top 10 Laptops of 2022
+  Our best picks for various needs and budgets.
+  -------------------------------
+
+  03
+  The Growth of Gaming
+  How the pandemic has sparked fresh opportunities.
+  
+ -->

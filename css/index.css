@@ -1,0 +1,110 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+body,
+html {
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+body {
+  /* Default */
+  font-family: Inter;
+  /* 500 700 800 */
+  background-color: var(--Off-white);
+}
+p {
+  font-size: 15px;
+  font-weight: 500;
+}
+a {
+  color: var(--Very--dark-blue);
+  font-family: Inter;
+  transition: var(--main-transition);
+}
+a:hover {
+  color: var(--Soft-red);
+}
+:root {
+  /* Colors */
+  /* ### Primary */
+  --Soft-orange: hsl(35, 77%, 62%);
+  --Soft-red: hsl(5, 85%, 63%);
+  /* ### Neutral */
+  --Off-white: hsl(36, 100%, 99%);
+  --Grayish-blue: hsl(233, 8%, 79%);
+  --Dark-grayish-blue: hsl(236, 13%, 42%);
+  --Very--dark-blue: hsl(240, 100%, 5%);
+  /* ---------------------------- */
+  --main-transition: 0.3s;
+}
+@font-face {
+  font-family: Inter;
+  src: url("../assets/fonts/Inter-VariableFont_slnt\,wght.ttf");
+}
+
+/* start header */
+
+/* end header */
+
+/* start future */
+.future .info h1 {
+  font-weight: 800;
+  color: var(--Very--dark-blue);
+  font-size: 3.3rem;
+}
+.future .info p {
+  color: var(--Dark-grayish-blue);
+
+}
+.future .info button {
+  background-color: var(--Soft-red);
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  color: var(--Off-white);
+  transition: var(--main-transition) background;
+}
+.future .info button:active,
+.future .info button:hover{
+  color: var(--Off-white);
+background-color: var(--Very--dark-blue);
+}
+.future .new {
+  background-color: var(--Very--dark-blue);
+}
+.future .new h1{
+  color: var(--Soft-orange);
+  font-weight: 700;
+}
+.future .new .text:not(:last-child){
+  border-bottom: 1px solid var(--Grayish-blue);
+}
+.future .new .text a{
+  color: var(--Off-white);
+  font-weight: 700;
+}
+.future .new .text a:hover{
+  color: var(--Soft-orange);
+}
+.future .new .text p{
+  color: var(--Grayish-blue);
+}
+/* end future */
+
+/* start cate */
+.cate  .info h3{
+  color: var(--Grayish-blue);
+  font-weight: 700;
+}
+.cate  .info a{
+  font-weight: 800;
+}
+.cate .info p{
+  
+color: var(--Dark-grayish-blue);
+}
+/* end cate */
